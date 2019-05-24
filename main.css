@@ -1,0 +1,64 @@
+.sidenav {
+  /*height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 150px; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 150px; /* alternatively: 0; */
+  left: 20px; /*alternatively: 0; */
+  background-color: #00b8e6; 
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 10px;
+  padding-left: 5px;
+  font-family: Helvetica;
+  color:#FFF;
+}
+
+.sidenav li {
+  padding-left: 0;
+}
+
+.sidenav a {
+	color:#FFF;
+	font-family: Helvetica;
+  text-decoration: none;
+}
+
+.sidenav a:hover {
+  color: #37383a;
+}
+
+.main {
+  margin-left: 240px; /* Same as the width of the sidebar */
+  margin-top: 72px;
+  padding: 0px 10px;
+  width: 450px;
+  color: #37383a;
+  font-family: Roboto;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+h2 {  }
+
+h4 {  }
+
+p { }
+
+.publications p {
+  margin-left: -5px;
+}
+
+.dog-photo img {
+	width: 800px;
+  max-width: 100%;
+}
+
+.footer {
+  margin-top: 120px;
+  margin-left: 220px;
+  font-family: Roboto;
+  font-size: 12px;
+}
