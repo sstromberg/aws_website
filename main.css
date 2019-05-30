@@ -24,14 +24,14 @@
   width: 150px; /* Set the width of the sidebar */
   position: fixed; /* Fixed Sidebar (stay in place on scroll) */
   z-index: 1; /* Stay on top */
-  top: 150px; /* alternatively: 0; */
-  left: 20px; /*alternatively: 0; */
+  top: 154px; /* alternatively: 0; */
+  left: 40px; /*alternatively: 0; */
   background-color: #00b8e6; 
   overflow-x: hidden; /* Disable horizontal scroll */
-  padding-top: 10px;
   padding-left: 5px;
-  font-family: Roboto, Helvetica;
+  font-family: "CooperHewitt-Medium", Roboto, Helvetica;
   color:#FFF;
+  font-size: 110%;
 }
 
 .sidenav li {
@@ -40,7 +40,6 @@
 
 .sidenav a {
 	color:#FFF;
-	font-family: Roboto, Helvetica;
   text-decoration: none;
 }
 
@@ -50,12 +49,13 @@
 
 /* here's the specs for the main vertical */
 .main {
-  margin-left: 240px; /* Same as the width of the sidebar */
-  margin-top: 72px;
+  margin-left: 270px; /* To keep it clear of the sidebar */
+  margin-top: 54px;
   padding: 0px 10px;
-  width: 560px;
+  width: 600px;
   color: #37383a;
   font-family: Roboto, Helvetica;
+  font-size: 110%;
 }
 
 @media screen and (max-height: 450px) {
@@ -63,20 +63,33 @@
   .sidenav a {font-size: 18px;}
 }
 
-h2 {  
+h1 {  
   font-family: "CooperHewitt-Bold", Interstate, Roboto, sans-serif;
 }
 
-h3 {
-  font-family: "CooperHewitt-Semibold", Interstate, Roboto, sans-serif;
+h2 {
+  font-family: "CooperHewitt-Bold", Interstate, Roboto, sans-serif;
+  font-size: 150%;
 }
 
-h4 { 
-  font-family: "CooperHewitt-Medium", Interstate, Roboto, sans-serif;
+h3 { 
+  font-family: "CooperHewitt-Semibold", Interstate, Roboto, sans-serif;
 }
 
 p { 
   font-family: Roboto, sans-serif;}
+
+.main a {
+  color: #37383a;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.main a:hover {
+  color: #00b8e6;
+  text-decoration: underline;
+  font-weight: bold;
+}
 
 .publications p {
   margin-left: -15px;
