@@ -1,11 +1,24 @@
+/* We're using a custom-downloaded (but free) font, so we have to store and load it */
 @font-face {
   font-family: CooperHewitt-Medium;
-  src: url("https://samtstromberg.com/fonts/CooperHewitt-Medium.eot");
-  src: url("https://samtstromberg.com/fonts/CooperHewitt-Medium.woff") format("woff"),
-       url("https://samtstromberg.com/fonts/CooperHewitt-Medium.svg") format("svg");
+  src: url("./fonts/CooperHewitt-Medium.eot");
+  src: url("./fonts/CooperHewitt-Medium.woff") format("woff"),
+       url("./fonts/CooperHewitt-Medium.svg") format("svg");
+}
+@font-face {
+  font-family: CooperHewitt-Semibold;
+  src: url("./fonts/CooperHewitt-Semibold.eot");
+  src: url("./fonts/CooperHewitt-Semibold.woff") format("woff"),
+       url("./fonts/CooperHewitt-Semibold.svg") format("svg");
+}
+@font-face {
+  font-family: CooperHewitt-Bold;
+  src: url("./fonts/CooperHewitt-Bold.eot");
+  src: url("./fonts/CooperHewitt-Bold.woff") format("woff"),
+       url("./fonts/CooperHewitt-Bold.svg") format("svg");
 }
 
-
+/* I still kind of like the look of a side-nav bar, sorry everyone */
 .sidenav {
   /*height: 100%; /* Full-height: remove this if you want "auto" height */
   width: 150px; /* Set the width of the sidebar */
@@ -35,13 +48,14 @@
   color: #37383a;
 }
 
+/* here's the specs for the main vertical */
 .main {
   margin-left: 240px; /* Same as the width of the sidebar */
   margin-top: 72px;
   padding: 0px 10px;
-  width: 450px;
+  width: 560px;
   color: #37383a;
-  font-family: "CooperHewitt-Medium", Interstate, Roboto, sans-serif;
+  font-family: Roboto, Helvetica;
 }
 
 @media screen and (max-height: 450px) {
@@ -49,14 +63,23 @@
   .sidenav a {font-size: 18px;}
 }
 
-h2 {  }
+h2 {  
+  font-family: "CooperHewitt-Bold", Interstate, Roboto, sans-serif;
+}
 
-h4 {  }
+h3 {
+  font-family: "CooperHewitt-Semibold", Interstate, Roboto, sans-serif;
+}
 
-p { }
+h4 { 
+  font-family: "CooperHewitt-Medium", Interstate, Roboto, sans-serif;
+}
+
+p { 
+  font-family: Roboto, sans-serif;}
 
 .publications p {
-  margin-left: -5px;
+  margin-left: -15px;
 }
 
 .dog-photo img {
@@ -64,6 +87,7 @@ p { }
   max-width: 100%;
 }
 
+/* I put a little copyright symbol in the footer, so that I can have a footer */
 .footer {
   margin-top: 120px;
   margin-left: 220px;
